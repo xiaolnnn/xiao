@@ -1,0 +1,27 @@
+/* --- PERBAIKAN LOCK LAYAR --- */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Mengunci geser kanan-kiri */
+    position: relative;
+    touch-action: pan-y; /* Hanya mengizinkan scroll atas-bawah pada layar sentuh */
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    -webkit-tap-highlight-color: transparen
+}
+@media (max-width: 768px) {
+    .image-stack-container {
+        overflow: hidden; 
+        width: 100vw;
+        left: 50%;
+        margin-left: -50vw;
+    }
+    
+    .stack-card {
+        width: 180px;
+        height: 240px;
+    }
+}
